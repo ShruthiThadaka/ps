@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function count(str){
+            let countVowels = 0;
+            let countConsonants = 0;
+            for(let i =0;i<str.length;i++){
+                if(str[i]=='a'||str[i]=='A' || str[i]=='e'||str[i]=='E' ||str[i]=='i'||str[i]=='I'||str[i]=='o'||str[i]=='O'||str[i]=='u'||str[i]=='U'){
+                    countVowels++;
+                }
+                else{
+                    countConsonants++;
+                }
+            }
+            console.log(`Vowels count = ${countVowels}`);
+            console.log(`Consonants count = ${countConsonants}`)
+        }
+        let str = prompt("Enter a string:");
+        count(str);
+    </script>
+</body>
+</html>
